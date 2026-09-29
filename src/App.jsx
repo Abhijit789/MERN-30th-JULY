@@ -26,6 +26,9 @@ import ComponentLieCycleClass from "./component life cycle/ComponentLieCycleClas
 import ControlledCompoent from "./controlled vs uncontrolled compoennts/ControlledCompoent.jsx";
 import UncontrolledComponent from "./controlled vs uncontrolled compoennts/UncontrolledComponent.jsx";
 import ParentRefComp from "./controlled vs uncontrolled compoennts/ParentRefComp.jsx";
+import ApiFetchingUsingFetch from "./API Fetching/ApiFetchingUsingFetch.jsx";
+import ApiFetchingUisngAxios from "./API Fetching/ApiFetchingUisngAxios.jsx";
+import User from "./API Fetching/User.jsx";
 
 function App(){
     return (
@@ -59,7 +62,10 @@ function App(){
             {/* <ComponentLieCycleClass/> */}
             {/* <ControlledCompoent/> */}
             {/* <UncontrolledComponent/> */}
-            <ParentRefComp/>
+            {/* <ParentRefComp/> */}
+            {/* <ApiFetchingUsingFetch/> */}
+            {/* <ApiFetchingUisngAxios/> */}
+            <User/>
         </>
     )
 }
