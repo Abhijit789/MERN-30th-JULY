@@ -29,6 +29,8 @@ import ParentRefComp from "./controlled vs uncontrolled compoennts/ParentRefComp
 import ApiFetchingUsingFetch from "./API Fetching/ApiFetchingUsingFetch.jsx";
 import ApiFetchingUisngAxios from "./API Fetching/ApiFetchingUisngAxios.jsx";
 import User from "./API Fetching/User.jsx";
+import UseMemo from "./performance optimization/UseMemo.jsx";
+import ParentComp from "./performance optimization/ParentComp.jsx";
 
 function App(){
     return (
@@ -65,7 +67,9 @@ function App(){
             {/* <ParentRefComp/> */}
             {/* <ApiFetchingUsingFetch/> */}
             {/* <ApiFetchingUisngAxios/> */}
-            <User/>
+            {/* <User/> */}
+            {/* <UseMemo/> */}
+            <ParentComp/>
         </>
     )
 }
