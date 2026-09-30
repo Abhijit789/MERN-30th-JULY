@@ -31,6 +31,12 @@ import ApiFetchingUisngAxios from "./API Fetching/ApiFetchingUisngAxios.jsx";
 import User from "./API Fetching/User.jsx";
 import UseMemo from "./performance optimization/UseMemo.jsx";
 import ParentComp from "./performance optimization/ParentComp.jsx";
+import ContextProvider from "./context api/ContextProvider.jsx";
+import Dashboard from "./context api/Dashboard.jsx";
+import LoginContext from "./context api/LoginContext.jsx";
+import UserContext from "./context api/contextConfig.js";
+import UserContxt from "./context api/UserContext.jsx";
+
 
 function App(){
     return (
@@ -69,7 +75,12 @@ function App(){
             {/* <ApiFetchingUisngAxios/> */}
             {/* <User/> */}
             {/* <UseMemo/> */}
-            <ParentComp/>
+            {/* <ParentComp/> */}
+            <ContextProvider>
+                <Dashboard/>
+                <LoginContext/>
+                <UserContxt/>
+            </ContextProvider>
         </>
     )
 }
