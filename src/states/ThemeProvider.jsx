@@ -7,7 +7,7 @@ function ThemeProvider() {
         setTheme(theme==="light"?"dark":"light")
     }
 
-    console.log(theme);
+    console.log("Theme Context",theme);
     
   return (
     <>

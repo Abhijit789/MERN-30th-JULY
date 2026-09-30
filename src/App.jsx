@@ -11,7 +11,7 @@ import Registration from "./states/Registration.jsx";
 import StateWithArray from "./states/StateWithArray.jsx";
 import StateWithIncorrectInitialState from "./states/StateWithIncorrectInitialState.jsx";
 import StateWithObject from "./states/StateWithObject.jsx";
-import ThemeProvider from "./states/ThemeProvider.jsx";
+// import ThemeProvider from "./states/ThemeProvider.jsx";
 import Welocme from "./states/Welocme.jsx";
 import Bootstrap from "./style/Bootstrap.jsx";
 import SuperParent from "./props/SuperParent.jsx";
@@ -36,6 +36,8 @@ import Dashboard from "./context api/Dashboard.jsx";
 import LoginContext from "./context api/LoginContext.jsx";
 import UserContext from "./context api/contextConfig.js";
 import UserContxt from "./context api/UserContext.jsx";
+import ThemeImplement from "./context api/ThemeImplement.jsx";
+import ThemeProvider1 from "./context api/ThemeProvider1.jsx";
 
 
 function App(){
@@ -76,11 +78,14 @@ function App(){
             {/* <User/> */}
             {/* <UseMemo/> */}
             {/* <ParentComp/> */}
-            <ContextProvider>
+            {/* <ContextProvider>
                 <Dashboard/>
                 <LoginContext/>
                 <UserContxt/>
-            </ContextProvider>
+            </ContextProvider> */}
+            <ThemeProvider1>
+                <ThemeImplement/>
+            </ThemeProvider1>
         </>
     )
 }
