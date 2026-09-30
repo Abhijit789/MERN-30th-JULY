@@ -38,6 +38,8 @@ import UserContext from "./context api/contextConfig.js";
 import UserContxt from "./context api/UserContext.jsx";
 import ThemeImplement from "./context api/ThemeImplement.jsx";
 import ThemeProvider1 from "./context api/ThemeProvider1.jsx";
+import CounterApplication from "./use reducer/CounterApplication.jsx";
+import UserApplication from "./use reducer/UserApplication.jsx";
 
 
 function App(){
@@ -83,9 +85,11 @@ function App(){
                 <LoginContext/>
                 <UserContxt/>
             </ContextProvider> */}
-            <ThemeProvider1>
+            {/* <ThemeProvider1>
                 <ThemeImplement/>
-            </ThemeProvider1>
+            </ThemeProvider1> */}
+            {/* <CounterApplication/> */}
+            <UserApplication/>
         </>
     )
 }
