@@ -40,7 +40,8 @@ function userReducer(state,action){
         case "ADD_USER":
             return {
                 ...state,
-                users:[...state.users,action.payload]
+                users:[...state.users,action.payload],
+                loading:false
             }
         case "DELETE_USER":
             return {
@@ -48,7 +49,7 @@ function userReducer(state,action){
                 users:state.users.filter(user=>user.id !== action.payload),
                 
             }
-        case "CLEAR_USER":
+        case "CLEAR_USERS":
             return {
                 ...state,
                 users:[],

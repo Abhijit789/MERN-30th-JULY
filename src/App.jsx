@@ -40,6 +40,9 @@ import ThemeImplement from "./context api/ThemeImplement.jsx";
 import ThemeProvider1 from "./context api/ThemeProvider1.jsx";
 import CounterApplication from "./use reducer/CounterApplication.jsx";
 import UserApplication from "./use reducer/UserApplication.jsx";
+import UserFetch from "./Custom Hooks/UserFetch.jsx";
+import ErrorBoundaries from "./ErrorBoundaries/ErrorBoundaries.jsx";
+import BuggyComponent from "./ErrorBoundaries/BuggyComponent.jsx";
 
 
 function App(){
@@ -89,7 +92,20 @@ function App(){
                 <ThemeImplement/>
             </ThemeProvider1> */}
             {/* <CounterApplication/> */}
-            <UserApplication/>
+            {/* <UserApplication/> */}
+            {/* <UserFetch/> */}
+            <ErrorBoundaries>
+                <BuggyComponent heroName="ironman"/>
+            </ErrorBoundaries>
+            
+            <ErrorBoundaries>
+                <BuggyComponent heroName="salman khan"/>
+            </ErrorBoundaries>
+            
+            <ErrorBoundaries>
+                <BuggyComponent heroName="ironman"/>
+            </ErrorBoundaries>
+            
         </>
     )
 }
