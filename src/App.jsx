@@ -38,11 +38,12 @@ import UserContext from "./context api/contextConfig.js";
 import UserContxt from "./context api/UserContext.jsx";
 import ThemeImplement from "./context api/ThemeImplement.jsx";
 import ThemeProvider1 from "./context api/ThemeProvider1.jsx";
-import CounterApplication from "./use reducer/CounterApplication.jsx";
+// import CounterApplication from "./use reducer/CounterApplication.jsx";
 import UserApplication from "./use reducer/UserApplication.jsx";
 import UserFetch from "./Custom Hooks/UserFetch.jsx";
 import ErrorBoundaries from "./ErrorBoundaries/ErrorBoundaries.jsx";
 import BuggyComponent from "./ErrorBoundaries/BuggyComponent.jsx";
+import CounterApplication from "./redux config/accessibility/CounterApplication.jsx";
 
 
 function App(){
@@ -94,7 +95,7 @@ function App(){
             {/* <CounterApplication/> */}
             {/* <UserApplication/> */}
             {/* <UserFetch/> */}
-            <ErrorBoundaries>
+            {/* <ErrorBoundaries>
                 <BuggyComponent heroName="ironman"/>
             </ErrorBoundaries>
             
@@ -104,7 +105,9 @@ function App(){
             
             <ErrorBoundaries>
                 <BuggyComponent heroName="ironman"/>
-            </ErrorBoundaries>
+            </ErrorBoundaries> */}
+
+            <CounterApplication/>
             
         </>
     )
